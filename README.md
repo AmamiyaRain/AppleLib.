@@ -1,5 +1,5 @@
-# AppleLib.
-This is a webSite that ugly as fxck.
-Product by LoserYbw and TrashNxy.
-Lmao, this webSite was made for my PHP FinalHomeWork.
-Be free to use it in ur~
+# AppleLib.<br>
+This is a webSite that ugly as fxck.<br>
+Product by LoserYbw and TrashNxy.<br>
+Lmao, this webSite was made for my PHP FinalHomeWork.<br>
+Be free to use it in ur~<br>
