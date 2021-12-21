@@ -36,7 +36,7 @@ error_reporting(E_ALL^E_NOTICE);
             $_SESSION['tempClear'] = false;
         if (isset($_GET['reg'])) {
             ?>
-            <div class="pure-g" style="margin: auto;width: 70%;margin-bottom: 800px">
+            <div class="pure-g  animate__animated animate__fadeIn" style="margin: auto;width: 70%;margin-bottom: 800px">
                 <form name="fm1" method="post" action="indexReg.php?reg=true" class="pure-form">
                     <div class="pure-u-1-1"
                          style="font-size: 250%;text-align: center;margin-top: 30px ;margin-bottom: 10px">

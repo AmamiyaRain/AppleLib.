@@ -91,7 +91,6 @@ class Connection
     public function search ( $type, $where )
     {
         $sql = "SELECT * FROM $this->table WHERE `$type`='$where'";
-
         return mysqli_query ($this -> link, $sql);
     }
 
@@ -107,7 +106,7 @@ class Connection
     {
         ?>
         <ul class="pure-menu-list">
-            <li class="pure-menu-item">
+            <li class="pure-menu-item ">
                 <?php
                 echo "<li class='pure-menu-item pure-menu-has-children pure-menu-allow-hover'>";
 
@@ -158,9 +157,10 @@ class Connection
     {
         //以表格+div块来打印 一行两件商品四个块
         while ($arr = mysqli_fetch_array ($result)) {
-            echo "<div class='pure-u-1-4' style='text-align: center;height: 450px;margin-top: 30px' >";
+            echo "<div class='pure-u-1-4 animate__animated animate__bounceInRight' style='z-index=-99999999;text-align: center;height: 450px;margin-top: 30px'  >";
             echo "<div class='pure-u-1-1'  style='height:80%;text-align: center'>";
             echo "<a href='./indexID.php?id={$arr['book_id']}'><img src='./img/$arr[book_pic]'  style='text-align:center;width: 300px;height: 300px;margin: 20px 0' alt=''></a>";
+
             echo "</div>";
             echo "<a href='./indexID.php?id={$arr['book_id']}' class='pure-menu-link'>";
             echo "<div class='pure-u-1-1' style='height: 20%'>";

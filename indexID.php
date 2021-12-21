@@ -28,14 +28,14 @@ error_reporting(E_ALL^E_NOTICE);
     ?>
 
 
-    <div style="margin-left: 30px">
+    <div style="margin-left: 30px " class="">
         <?php
         if (!isset($_SESSION['temp']))
             $_SESSION['temp'] = false;
         if (!isset($_SESSION['tempClear']))
             $_SESSION['tempClear'] = false;
         if (isset($_GET['id'])) {
-            echo "<div style='margin-bottom: 600px'>";
+            echo "<div style='margin-bottom: 600px' class='animate__animated animate__zoomIn'>";
             $id = $_GET['id'];
             //按id搜索商品
             $result = $connection -> search ('book_id', $id);

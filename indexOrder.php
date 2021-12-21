@@ -48,7 +48,7 @@ error_reporting (E_ALL ^ E_NOTICE);
                     echo "</div>";
                     echo "<div class='pure-u-4-5' style='padding-top: 15px;text-align: left'>";
                     echo "<div class='pure-u-1-3'>";
-                    echo "<span style='font-size: 120%;font-weight: bolder'> 《{$value['book_name']}》<br><br> </span>";
+                    echo "<span style='font-size: 130%;font-weight: bolder'> 《{$value['book_name']}》<br><br> </span>";
                     echo "<span style='font-size: 100%;font-weight: bolder;color: #626262'> &nbsp;&nbsp;{$value['book_writer']} </span>";
                     echo "</div>";
                     echo "<div class='pure-u-1-3'>";
@@ -57,7 +57,7 @@ error_reporting (E_ALL ^ E_NOTICE);
                     echo "<button class='pure-button' style='pointer-events: none'>&nbsp;</button>";
                     echo "</div>";
                     echo "<div class='pure-u-1-3'>";
-                    echo "<span style='font-size: 120%;font-weight: bolder'>RMB " . ($value['book_value'] * $value['num']) . "</span><br><br>";
+                    echo "<span style='font-size: 130%;font-weight: bolder'>RMB " . ($value['book_value'] * $value['num']) . "</span><br><br>";
                     if ($_SESSION['tempClear'] != null) {
                         if ($_SESSION['tempClear']) {
                             echo "<script>swal('成功删除一件商品!','','success')</script>";

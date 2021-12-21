@@ -36,7 +36,7 @@ error_reporting (E_ALL ^ E_NOTICE);
             $_SESSION['tempClear'] = false;
         if (isset($_GET['log'])) {
             ?>
-            <div class="pure-g" style="margin: auto;width: 70%;margin-bottom: 800px">
+            <div class="pure-g animate__animated animate__fadeIn" style="margin: auto;width: 70%;margin-bottom: 800px" >
                 <form name="fm1" method="post" action="indexLog.php?log=true" class="pure-form">
                     <div class="pure-u-1-1" style="margin-top: 50px;margin-bottom: 50px;">
                         <span style="font-size: 250%">请登录。</span>

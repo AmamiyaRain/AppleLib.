@@ -43,7 +43,7 @@ error_reporting (E_ALL ^ E_NOTICE);
                 $tempJudge = true;
             }
             if ($tempJudge&&$_SESSION['isLogin']) {
-                echo "<div class='pure-g'style='width: 60%;margin: auto;padding-top: 50px'>";
+                echo "<div class='pure-g animate__animated animate__zoomIn'style='width: 60%;margin: auto;padding-top: 50px' >";
                 foreach ((array)$bookList as $value) {
                     echo "<div class='pure-u-1-5' style=''>";
                     echo "<img class='pure-img'style='width: 100%;height: 100%' src='img/{$value['book_pic']}'>";
@@ -108,7 +108,7 @@ error_reporting (E_ALL ^ E_NOTICE);
                         $_SESSION['orderTemp'] = !$_SESSION['orderTemp'];
                     }
                 }
-                echo "<a href='./class&functions/insertOrder.php' class='pure-button pure-button-primary' style='font-size: 150%;width: 300px'>结账</a>";
+                echo "<a href='./class&functions/insertOrder.php' class='pure-button pure-button-primary animate__animated animate__tada animate__delay-1s animate__repeat-2' style='font-size: 150%;width: 300px'>结账</a>";
                 echo "</div>";
                 echo "</div>";
             } else {

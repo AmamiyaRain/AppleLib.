@@ -12,7 +12,7 @@ $backgroundColor = imagecolorallocate ($canvas, 255,
 // 填充颜色
 imagefill ($canvas, 0, 0, $backgroundColor);
 // 准备文本
-$letter = 'ABCDEFGHJKMNOPQRSTUVWXYZabcdefghjkmnopqrstuvwxyz';
+$letter = 'ABCDEFGHJKMNPRSTWXYZabcdefghjkmnprstwxyz';
 // 准备文本的长度
 $letterLength = strlen ($letter);
 //定义验证码的长度

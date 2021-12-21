@@ -5,6 +5,7 @@
     <title>APPLE LIB.</title>
     <link rel="stylesheet" href="./css/my.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <script type="text/javascript" src="./script/myScript.js"></script>
     <script type="text/javascript" src="./script/sweet.js"></script>
 
@@ -28,7 +29,7 @@ error_reporting(E_ALL^E_NOTICE);
     ?>
 
 
-    <div style="margin-left: 30px">
+    <div style="margin-left: 30px;z-index: -99999" >
         <?php
 
         $resultAll = $connection -> searchEveryThing ();
