@@ -50,7 +50,7 @@ error_reporting (E_ALL ^ E_NOTICE);
         if (mysqli_num_rows ($tempResult) != 0) {
             while ($row = mysqli_fetch_assoc ($tempResult)) {
                 $bookList = json_decode ($row['detail'], true);
-                echo "<div class='pure-u-1-3'>";
+                echo "<div class='pure-u-1-3 animate__animated animate__fadeIn' >";
                 $connection -> setTable ('users');
                 $tempUsers = $connection -> search ('email', "{$row['appleID']}");
                 $connection -> setTable ('book_product');

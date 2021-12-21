@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>$Title$</title>
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
 <body>
 <?php
@@ -10,7 +11,7 @@ require_once ('class&functions/Class&Functions.php');
 $connection = new Connection('book_product');
 
 ?>
-<div class="pure-menu" style="position: fixed;margin-left: -150px;height: 100%;background-color: #f6f6f6">
+<div class="pure-menu" style="position: fixed;margin-left: -150px;height: 100%;background-color: #f6f6f6;z-index: 9999">
     <a class="pure-menu-heading" href="admin.php"
        style="font-size: 150%;font-weight: bolder;margin-top: 30px;margin-bottom: 20px">APPLE LIB.</a>
     <div class="pure-menu custom-restricted-width" style="font-size: 130%">

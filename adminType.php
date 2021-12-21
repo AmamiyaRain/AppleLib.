@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/icon.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
+    <link rel="stylesheet" href="./css/icon.css"><link rel="stylesheet" href="./css/animate.css">
     <script type="text/javascript" src="./script/myScript.js"></script>
     <script type="text/javascript" src="./script/sweet.js"></script>
 </head>
@@ -59,7 +60,7 @@ error_reporting(E_ALL^E_NOTICE);
             $connection -> printByConditionRightSideAdmin ($resultAll);
             echo "<div class='pure-u-1-4' style='text-align: center;height: 450px;margin-top: 30px;margin-bottom: 30px' >";
             echo "<div class='pure-u-1-1'  style='height:80%;text-align: center'>";
-            echo "<a href='./adminCreate.php'><img src='./img/add.png'   style='filter: brightness(70%);text-align:center;width: 300px;height: 300px;margin: 20px 0' alt=''></a>";
+            echo "<a href='./adminCreate.php'><img class='animate__animated animate__bounceInRight' src='./img/add.png'   style='filter: brightness(70%);text-align:center;width: 150px;height: 150px;margin: 100px 0' alt=''></a>";
             echo "</div>";
             echo "</form>";
             echo "</div>";

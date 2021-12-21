@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <script type="text/javascript" src="./script/myScript.js"></script>
     <script type="text/javascript" src="./script/sweet.js"></script>
+    <link rel="stylesheet" href="./css/icon.css"><link rel="stylesheet" href="./css/animate.css">
 
 </head>
 <body>
@@ -52,7 +53,7 @@ error_reporting (E_ALL ^ E_NOTICE);
         }
 
         if (isset($_GET['id'])) {
-            echo "<div style='margin-bottom: 600px'>";
+            echo "<div style='margin-bottom: 600px' class='animate__animated animate__zoomIn'>";
             $id = $_GET['id'];
             //按id搜索商品
             $result = $connection -> search ('book_id', $id);

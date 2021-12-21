@@ -33,7 +33,7 @@ error_reporting (E_ALL ^ E_NOTICE);
     ?>
 
     <div style="margin-left: 30px">
-        <div class="pure-g" style="margin: auto;width: 70%;margin-bottom: 800px">
+        <div class="pure-g animate__animated animate__fadeIn" style="margin: auto;width: 70%;margin-bottom: 800px">
             <?php
             echo "<div class='pure-u-1-2'>";
             echo "<div class='pure-u-1-1' style='margin-top: 100px;margin-bottom: 30px'><img style='width: 250px;height: 250px;border-radius:50%' src='./avatar/{$_SESSION['nowAdmin']['userAvatar']}'>";

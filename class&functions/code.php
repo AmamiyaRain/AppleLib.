@@ -40,13 +40,15 @@ for ($i = 0; $i < $codeLength; $i++) {
     imagettftext ($canvas, $fontSize, $angle, $x, $y, $fontColor, $fontFile, $letter[$index]);
     $string .= $letter[$index];
 }
-if (isset($_SESSION['yzm']))
-    $_SESSION['preyzm'] = $_SESSION['yzm'];
-$_SESSION['yzm'] = strtoupper ($string);
+
 
 
 ob_clean ();
 // 设置响应头(为了告诉浏览器这是图片)
+if (isset($_SESSION['yzm']))
+    $_SESSION['preyzm'] = $_SESSION['yzm'];
+$_SESSION['yzm'] = strtoupper ($string);
+
 header ('Content-type: image/jpeg');
 // 输出
 imagejpeg ($canvas);

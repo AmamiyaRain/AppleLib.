@@ -14,6 +14,8 @@
     <script type="text/javascript" src="./script/myScript.js"></script>
     <script type="text/javascript" src="./script/sweet.js"></script>
     <link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <script type="text/javascript" src="./script/sweet.js"></script>
+    <link rel="stylesheet" href="./css/icon.css"><link rel="stylesheet" href="./css/animate.css">
     <script>(function (e, t, n) {
             var r = e.querySelectorAll("html")[0];
             r.className = r.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2")
@@ -52,7 +54,7 @@ error_reporting (E_ALL ^ E_NOTICE);
 
 
 
-        echo "<div style='margin-bottom: 600px'>";
+        echo "<div style='margin-bottom: 600px'class='animate__animated animate__zoomIn'>";
         //按id搜索商品
 
         echo "<form method='post' action='uploadCreate.php' enctype='multipart/form-data' class='pure-form'>";

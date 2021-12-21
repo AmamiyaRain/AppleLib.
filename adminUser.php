@@ -43,7 +43,7 @@ error_reporting (E_ALL ^ E_NOTICE);
 
         if (mysqli_num_rows ($tempResult) != 0) {
             while ($row = mysqli_fetch_assoc ($tempResult)) {
-                echo "<div class='pure-u-1-3'>";
+                echo "<div class='pure-u-1-3 animate__animated animate__fadeIn' >";
                 echo "<div class='pure-g'style='width: 60%;margin: auto;padding-top: 50px'>";
                 echo "<div class='pure-u-1-1'>";
                 echo "<a href='./class&functions/adminUserTemp.php?id={$row['user_id']}'><img src='./avatar/{$row['avatar']}' style='width: 100px;height: 100px;border-radius: 50%'><div style='margin-top: -63px;margin-left: 130px'></a><span style='font-weight: bolder;font-size: 150%'>{$row['name']}</span></div>";

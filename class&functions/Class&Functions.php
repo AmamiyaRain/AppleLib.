@@ -177,7 +177,7 @@ class Connection
     {
         //以表格+div块来打印 一行两件商品四个块
         while ($arr = mysqli_fetch_array ($result)) {
-            echo "<div class='pure-u-1-4' style='text-align: center;height: 450px;margin-top: 30px;margin-bottom: 30px' >";
+            echo "<div class='pure-u-1-4 animate__animated animate__bounceInRight' style='text-align: center;height: 450px;margin-top: 30px;margin-bottom: 30px' >";
             echo "<div class='pure-u-1-1'  style='height:80%;text-align: center'>";
             echo "<a href='./adminID.php?id={$arr['book_id']}'><img src='./img/$arr[book_pic]'  style='text-align:center;width: 300px;height: 300px;margin: 20px 0' alt=''></a>";
             echo "<div style='margin-left: -240px;margin-top:-340px'><a href='./class&functions/delete.php?id={$arr['book_id']}' class='Circle icono-cross' style='width:40px;height:40px;background: rgb(202, 60, 60);color: white'></a></div>";
